@@ -1,0 +1,45 @@
+body {
+  background-color: rgb(54, 110, 54);
+}
+
+.outerdiv {
+  background-color: rgb(147, 203, 147);
+  border: 1px solid beige;
+  border-radius: 15px;
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#heading {
+  font-family: "Courier New", Courier, monospace;
+  padding-top: 15px;
+  text-align: center;
+}
+
+fieldset {
+  border: 1px solid rgb(54, 110, 54);
+  border-radius: 10px;
+  margin: 10px;
+}
+
+legend {
+  font-weight: bold;
+  font-family: 'Comfortaa', cursive;
+}
+
+label{
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+input::placeholder{
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+textarea::placeholder{
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+#head2{
+    font-family: 'Chakra Petch', sans-serif;
+}
