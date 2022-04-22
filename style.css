@@ -42,6 +42,7 @@ textarea::placeholder{
 
 #head2{
     font-family: 'Chakra Petch', sans-serif;
+    max-width: auto;
 }
 
 #submitbtn{
@@ -64,4 +65,9 @@ textarea::placeholder{
 
 #upload{
   font-family: 'Chakra Petch', sans-serif;
+}
+
+.txtarea{
+    max-width: 100%; 
+    max-height: 100%;
 }

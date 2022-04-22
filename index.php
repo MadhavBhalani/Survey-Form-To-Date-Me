@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    /> -->
+
+    <title>Survey Form to Date Me</title>
+  </head>
+  <body>
+    <form action="submitted.php" method="POST" enctype="multipart/form-data">
+      <div class="outerdiv">
+        <div id="heading">
+          <h2>Application For Permission To Date Me</h2>
+        </div>
+        <div style="padding-left: 10px">
+          <span style="font-weight: bold; font-family: 'Montserrat', sans-serif"
+            >Note:</span
+          >
+          <span style="font-family: 'Montserrat', sans-serif"
+            >Form is to be compeleted at least 21 days to the prior date.</span
+          >
+        </div>
+        <div>
+          <fieldset>
+            <legend>Personal Details</legend>
+            <div>
+              <label for="">Name:</label>
+              <br />
+              <input
+                type="text"
+                name="name"
+                id=""
+                placeholder="Enter your name here"
+                required
+              />
+            </div>
+            <div>
+              <label for="">Address:</label>
+              <br />
+              <textarea
+                name="address"
+                id="txtarea"
+                cols="auto"
+                rows="auto"
+                placeholder="Enter your address here"
+                required
+              ></textarea>
+            </div>
+            <div>
+              <label for="">Instagram Username:</label>
+              <br />
+              <input
+                type="text"
+                name="igname"
+                id=""
+                placeholder="Enter your ig username here"
+                required
+              />
+            </div>
+            <div>
+              <label for="">Mobile No:</label>
+              <br />
+              <input
+                type="text"
+                name="mobno"
+                id=""
+                placeholder="Enter your mob no. here"
+                maxlength="12"
+                required
+              />
+            </div>
+            <div>
+              <label for="">Email:</label> <br />
+              <label for="" style="font-size: smaller"
+                >(Just incase you block me on Instagram)
+              </label>
+              <br />
+              <input
+                type="email"
+                name="email"
+                id=""
+                placeholder="Enter your email here"
+                required
+              />
+            </div>
+            <div>
+              <label for="">Date of Proposed Outing:</label>
+              <br />
+              <input type="date" name="date" id="" required />
+            </div>
+          </fieldset>
+          <fieldset>
+            <div>
+              <span id="head2">Check All That Apply</span>
+              <br />
+              <input type="checkbox" name="chkbox[]" id="checkbox" value="I got small waist pretty face with a big bang"/>
+              <label for=""
+                >I got small waist pretty face with a big bang</label
+              >
+              <br />
+              <input type="checkbox" name="chkbox[]" id="checkbox" value="I have rich parents"/>
+              <label for="">I have rich parents</label> <br />
+              <input type="checkbox" name="chkbox[]" id="checkbox" value="The date is at a well lit public location"/>
+              <label for="">The date is at a well lit public location</label>
+              <br />
+              <input type="checkbox" name="chkbox[]" id="checkbox" value="I love cars"/>
+              <label for="">I love cars</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Essay Section</legend>
+            <div>
+              <span id="head2"
+                >In 50 words or more explain why would you like to date me</span
+              >
+              <br />
+              <textarea
+                name="essay"
+                id="txtarea"
+                cols="auto"
+                rows="auto"
+                required
+              ></textarea>
+              <br />
+              <br />
+              <span id="head2"
+                >Please enter contact details of 2 friends hotter than you</span
+              >
+              <br />
+              <textarea
+                name="contact"
+                id="txtarea"
+                cols="auto"
+                rows="auto"
+                required
+              ></textarea>
+              <br />
+              <br />
+              <span id="head2">Upload your hottest pictures here</span>
+              <input type="file" name="image" id="upload" required />
+            </div>
+          </fieldset>
+        </div>
+        <div id="submitbtn">
+          <input type="submit" value="Submit" class="submit" />
+        </div>
+      </div>
+
+      <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script> -->
+    </form>
+  </body>
+</html>
